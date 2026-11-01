@@ -1,4 +1,4 @@
-from random import choice, randint
+from random import randint
 
 import pygame
 
@@ -181,11 +181,6 @@ def main():
         snake.draw()
         apple.draw()
         pygame.display.update()
-
-        # Очистка экрана от предыдущего кадра (оставляем только фон)
-        # Это нужно делать аккуратно, чтобы не затереть змейку,
-        # поэтому мы закрашиваем только фон и перерисовываем объекты.
-        # В текущей реализации затирание хвоста происходит в Snake.draw().
 
 
 if __name__ == '__main__':
